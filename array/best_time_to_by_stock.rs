@@ -9,9 +9,9 @@ impl Solution {
 
             current_profit = price - min_price;
 
-            max_profit = max_profit.mex(current_profit);
+            max_profit = max_profit.max(current_profit);
         }
 
-        max_profit
+        max_profit as i32
     }
 }
